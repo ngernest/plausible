@@ -1,6 +1,18 @@
 # Plausible
 A property testing framework for Lean 4 that integrates into the tactic framework.
 
+## Docs
+To generate documentation, run the following:
+```bash 
+$ cd docbuild
+$ lake build Plausible:docs
+```
+
+To render documentation in HTML, run the following in the top-level directory:
+```bash
+$ python3 -m http.server --directory docbuild/.lake/build/doc
+```
+
 ## Usage
 If you are using built in types Plausible is usually able to handle them already:
 ```lean
