@@ -2,13 +2,13 @@
 A property testing framework for Lean 4 that integrates into the tactic framework.
 
 ## Docs
-To generate documentation, run the following:
+- To generate documentation, run the following:
 ```bash 
 $ cd docbuild
 $ lake build Plausible:docs
 ```
 
-To render documentation in HTML, run the following in the top-level directory:
+- To render documentation in HTML, run the following in the top-level directory, and open `localhost:8000` in a browser:
 ```bash
 $ python3 -m http.server --directory docbuild/.lake/build/doc
 ```
